@@ -58,7 +58,7 @@ On the Login page, we attempt SQL injection, however, this is not successful, he
 
 **Findings:**
 - A LotusCMS-Exploit was obtained on GitHub
-  **Link:** [https://github.com/Hood3dRob1n/LotusCMS-Exploit/tree/master](https://github.com/Hood3dRob1n/LotusCMS-Exploit/tree/master)
+- **Link:** [https://github.com/Hood3dRob1n/LotusCMS-Exploit/tree/master](https://github.com/Hood3dRob1n/LotusCMS-Exploit/tree/master)
 - We set up the exploit on our machine
 - We run the exploit and specify the Target_IP it is to work with
 
