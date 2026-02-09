@@ -41,16 +41,16 @@ nikto -port 80 -host <Target_IP>
 
 ## Stage 2: Identifying Vulnerabilities to Gain RCE into the System
 
-### Step 1: Testing for SQL Injection and Identifying the CMS
+### Step 1: Surveying the website to gain additional information.
 
-On the Login page, we attempt SQL injection, however, this is not successful. We must find more information to break in through other means.
+On the Login page, we attempt SQL injection, however, this is not successful, hence we must find more information to break in through other means.
 
 **Findings:**
 - The security provided for the site is through a vendor called **LotusCMS**
 - We look up LotusCMS on searchsploit to see if there are any vulnerabilities available
 - The search shows us a few exploits we could use
 - We load up Metasploit and run the `LotusCMS 3.0 - 'eval()' Remote Command Execution (Metasploit)` exploit
-- The exploit executed successfully, but failed to open up a session for us
+- The exploit executed successfully, but failed to open up a session.
 
 ---
 
@@ -82,8 +82,8 @@ nc -lnvp 4444
 ## Stage 4: Grabbing the User Account Details for Privilege Users
 
 **Findings:**
-- From the admin account details obtained from the `config.php` file, we login into the MYSQL server
-- By navigating the database, we find the admin password details located in the `gallarific_users` column
+- From the admin account details obtained from the `config.php` file, we login into the MYSQL server.
+- By navigating the database, we find the admin password details located in the `gallarific_users` column.
 - Additionally, we have also obtained the Dev account details for two users in the table
 
 ---
