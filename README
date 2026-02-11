@@ -13,4 +13,3 @@ Result:
   - Successfully achieved remote code execution and full access to sensitive web application files.  
   - Retrieved administrative and developer account credentials from the MySQL database, demonstrating complete compromise of the application stack.  
   - Highlighted critical security weaknesses in web application configuration, credential handling, and patch management.
-
